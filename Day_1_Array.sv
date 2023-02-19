@@ -30,3 +30,27 @@ endmodule
 array[0] value is 5.44
 array[1] value is 4.00
 array[2] value is 6.00
+
+//multi dim
+module multi_dim_array;
+    int multi_dim[2][2][2]='{'{'{3,2},'{4,2},'{5,1}},'{'{4,9},'{4,5},'{4,8}}};
+    initial begin
+    foreach(multi_dim[i,j,k])
+    begin
+    $display("array[%0d][%0d][%0d] value is %0d",i,j,k,multi_dim[i][j][k]);
+    end
+    end
+endmodule
+//output
+array[0][0][0] value is 3
+array[0][0][1] value is 2
+array[0][1][0] value is 4
+array[0][1][1] value is 2
+array[0][2][0] value is 5
+array[0][2][1] value is 1
+array[1][0][0] value is 4
+array[1][0][1] value is 9
+array[1][1][0] value is 4
+array[1][1][1] value is 5
+array[1][2][0] value is 4
+array[1][2][1] value is 8
