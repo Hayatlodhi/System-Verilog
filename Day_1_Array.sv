@@ -33,7 +33,7 @@ array[2] value is 6.00
 
 //multi dim
 module multi_dim_array;
-    int multi_dim[2][2][2]='{'{'{3,2},'{4,2},'{5,1}},'{'{4,9},'{4,5},'{4,8}}};
+    int multi_dim[2][3][2]='{'{'{3,2},'{4,2},'{5,1}},'{'{4,9},'{4,5},'{4,8}}};
     initial begin
     foreach(multi_dim[i,j,k])
     begin
@@ -41,6 +41,8 @@ module multi_dim_array;
     end
     end
 endmodule
+
+
 //output
 array[0][0][0] value is 3
 array[0][0][1] value is 2
