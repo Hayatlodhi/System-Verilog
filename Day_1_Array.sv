@@ -31,6 +31,24 @@ array[0] value is 5.44
 array[1] value is 4.00
 array[2] value is 6.00
 
+//Two Dimension
+module multi_dim_array;
+    real multi_dim[3][2]='{'{2,2},'{1,2},'{6,9}};
+    initial begin
+    foreach(multi_dim[i,j])
+    begin
+    $display("array[%0d][%0d] value is %0d",i,j,multi_dim[i][j]);
+    end
+    end
+ endmodule
+//output
+array[0][0] value is 2
+array[0][1] value is 2
+array[1][0] value is 1
+array[1][1] value is 2
+array[2][0] value is 6
+array[2][1] value is 9
+
 //multi dim
 module multi_dim_array;
     int multi_dim[2][3][2]='{'{'{3,2},'{4,2},'{5,1}},'{'{4,9},'{4,5},'{4,8}}};
