@@ -1,6 +1,6 @@
-int arr[3] = '{5,6,7};  // Declaration, and assignment
+// declaration of array 
+int arr[2] = '{3,4};  // Declaration, and assignment
 Or
-int arr[3];
-arr[0] = 5;
-arr[1] = 6;
-arr[2] = 7;
+int arr[2];
+arr[0] = 3;
+arr[1] = 4;
