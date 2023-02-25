@@ -1,0 +1,3 @@
+I learned about associative array and observe some results which are as follow<br>
+1. Packed array can't be define with int as the primary reason for this is that packed arrays are designed to provide efficient storage and access to arrays of bit-level values, and a scalar data type like int does not have the necessary vector characteristics to support this functionality. Packed arrays require a vector data type, such as logic, bit, or reg, to represent bit-level values.<br>
+2. 
