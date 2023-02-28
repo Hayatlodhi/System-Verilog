@@ -1,1 +1,1 @@
-
+Today I learned about event key in Sv, the event keyword is used to declare an event object, which is a synchronization object that can be used to signal the occurrence of an event. An event can be thought of as a flag that is raised when a certain condition is met, and that can be used to coordinate the execution of different parts of a design.
