@@ -14,7 +14,6 @@ module hayat_function;
 endmodule
 
 
-
 //  Pass arguments by value
 module hayat_function;
   initial begin
@@ -32,3 +31,23 @@ endmodule
 // output
 // before calling function s=3, check_ar=0
 // After calling function s=3, check_ar=108
+
+
+
+// pass arguments by refernce
+module hayat_function;
+  initial begin
+  int s,check_ar;
+  s=3;
+    $display ("before calling function s=%0d, check_ar=%0d",s, check_ar);
+       check_ar= pass_arg_by_val(s);
+    $display ("After calling function s=%0d, check_ar=%0d",s,check_ar);
+  end
+  function automatic int pass_arg_by_val(ref int x);
+    x=x+9; 
+    return 9*x;
+  endfunction
+endmodule
+// Output
+// before calling function s=3, check_ar=0
+// After calling function s=12, check_ar=108
