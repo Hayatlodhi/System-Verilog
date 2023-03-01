@@ -12,3 +12,20 @@ module hayat_function;
     sum=x+y; 
   endfunction
 endmodule
+
+
+
+//  Pass arguments by value
+module hayat_function;
+  initial begin
+  int s,check_ar;
+  s=3;
+    $display ("s=%0d, check_ar=%0d",s, check_ar);
+       check_ar= pass_arg_by_val(s);
+    $display ("After calling function s=%0d, check_ar=%0d",s,check_ar);
+  end
+  function int pass_arg_by_val(input int x);
+    x=x+9; 
+    return 9*x;
+  endfunction
+endmodule
