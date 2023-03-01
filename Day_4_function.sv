@@ -29,3 +29,6 @@ module hayat_function;
     return 9*x;
   endfunction
 endmodule
+// output
+// before calling function s=3, check_ar=0
+// After calling function s=3, check_ar=108
