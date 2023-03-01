@@ -1,3 +1,4 @@
+// simple example of function 
 module hayat_function;
   initial begin
   int s;
